@@ -91,6 +91,7 @@ Here is a link to a new brand guide that we will be moving toward in the coming 
 
 ### SWOT
 
+Talked through this in person
 
 
 ### Approach
@@ -109,7 +110,6 @@ Here is a link to a new brand guide that we will be moving toward in the coming 
 ## Wireframes
 
 
-
 ## Style Tile
 
 
@@ -118,7 +118,7 @@ Here is a link to a new brand guide that we will be moving toward in the coming 
 
 ## Code
 
-### [Live static site]()
+### [Live static site](http://amaliebarras.github.io/socialsolutions)
 ### [Codepen with Tabs](http://codepen.io/amaliebarras/pen/gLMrem)
 
 
