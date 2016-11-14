@@ -91,6 +91,7 @@ Here is a link to a new brand guide that we will be moving toward in the coming 
 
 ### SWOT
 
+Talked through this in person
 
 
 ### Approach
@@ -105,13 +106,32 @@ Here is a link to a new brand guide that we will be moving toward in the coming 
 
 ## Sketches
 
+### [Full Size PNGs](https://github.com/amaliebarras/socialsolutions/tree/gh-pages/designfiles/sketches)
 
 
 ## Wireframes
 
+### [Full Size PDFs](https://github.com/amaliebarras/socialsolutions/tree/gh-pages/designfiles/wireframes)
 
 
 ## Style Tile
 
+![screenshot](https://github.com/amaliebarras/socialsolutions/blob/gh-pages/designfiles/style%20tile/styletile.png?raw=true)
+
 
 ## Final Mockup
+
+![screenshot](https://raw.githubusercontent.com/amaliebarras/socialsolutions/gh-pages/designfiles/screenshot.png)
+
+
+### [Full Size PDFs and PNGs](https://github.com/amaliebarras/socialsolutions/tree/gh-pages/designfiles/mocks)
+
+## Prototype
+### [Link to invision](https://projects.invisionapp.com/d/main#/console/9571853/204867114/preview)
+
+## Code
+
+### [Live static site](http://amaliebarras.github.io/socialsolutions)
+### [Codepen with Tabs](http://codepen.io/amaliebarras/pen/gLMrem)
+
+
