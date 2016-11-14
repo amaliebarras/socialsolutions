@@ -1,0 +1,370 @@
+    /**
+ * Reset some basic elements
+ */
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    hr,
+    dl,
+    dd,
+    ol,
+    ul,
+    figure {
+        margin: 0;
+        padding: 0;
+    }
+    /**
+ * Basic styling
+ */
+
+p {
+    max-width: 70%;
+}
+
+    body {
+        font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+        color: $text-color;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-feature-settings: "kern" 1;
+        -moz-font-feature-settings: "kern" 1;
+        -o-font-feature-settings: "kern" 1;
+        font-feature-settings: "kern" 1;
+        font-kerning: normal;
+
+    }
+    /**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    ul,
+    ol,
+    dl,
+    figure,
+    %vertical-rhythm {
+        margin-bottom: $spacing-unit / 2;
+    }
+    /**
+ * Images
+ */
+
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+    }
+    /**
+ * Figures
+ */
+
+    figure > img {
+        display: block;
+    }
+
+    /**
+ * Lists
+ */
+
+    ul,
+    ol {
+        margin-left: $spacing-unit;
+    }
+
+    li {
+        > ul,
+        > ol {
+            margin-bottom: 0;
+        }
+    }
+
+    /**
+ * Links
+ */
+
+    a {
+        color: $secondary-green;
+        text-decoration: none;
+        &:visited {
+            color: darken($grey-color, 15%);
+        }
+        &:hover {
+            color: $brand-color;
+        }
+    }
+
+    /**
+ * Blockquotes
+ */
+
+    blockquote {
+        color: $grey-color;
+        border-left: 4px solid $grey-color-light;
+        padding-left: $spacing-unit / 2;
+        font-size: 18px;
+        letter-spacing: -1px;
+        font-style: italic;
+        >:last-child {
+            margin-bottom: 0;
+        }
+    }
+    /**
+ * Code formatting
+ */
+
+    pre,
+    code {
+        font-size: 15px;
+        border: 1px solid $grey-color-light;
+        border-radius: 3px;
+        background-color: #eef;
+    }
+
+    code {
+        padding: 1px 5px;
+    }
+
+    pre {
+        padding: 8px 12px;
+        overflow-x: auto;
+        > code {
+            border: 0;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    /**
+ * Wrapper
+ */
+
+    .wrapper {
+        padding-right: $spacing-unit;
+        padding-left: $spacing-unit;
+        @extend %clearfix;
+    }
+    /**
+ * Clearfix
+ */
+
+    %clearfix {
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+    /**
+ * Icons
+ */
+
+    .icon {
+        > svg {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            path {
+                fill: $grey-color;
+            }
+        }
+    }
+
+    .sidebar {
+        position: fixed;
+        float: left;
+        top: 10em;
+        left: 0;
+        width: 15%;
+        padding: 2em;
+        padding-top: 0;
+        clear: both;
+        a {
+            text-align: center;
+            display: block;
+            font-size: 2em;
+            line-height: 1em;
+            text-transform: uppercase;
+            margin-bottom: 1em;
+        }
+    }
+
+    .styleguide-content {
+        border-left: 1px solid $grey-color;
+        margin-top: 12px;
+        float: right;
+        color: $brand-color;
+        width: 80%;
+        padding: 2em;
+        box-sizing: border-box;
+        .subsection {
+            margin-bottom: 3em;
+        }
+    }
+
+    .gridwrapper {
+        padding: 3em;
+        background-color: $background-color;
+        $tot-width: 100%;
+        $num-col: 12;
+        $gut-width: 2%;
+        $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
+        @mixin grid($geezy) {
+            width: ($geezy * $ind-col-width) + ($gut-width * ($geezy - 1));
+            float: left;
+            margin-right: $gut-width;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .col {
+            height: 2em;
+            background-color: $grey-color-dark;
+            margin-bottom: 5px;
+        }
+        .row {
+            margin-top: 2em;
+            overflow: hidden;
+        }
+        /* larger grid */
+        @media (min-width: 650px) {
+            .col-1 {
+                @include grid (1);
+            }
+            .col-2 {
+                @include grid(2);
+            }
+            .col-3 {
+                @include grid(3);
+            }
+            .col-4 {
+                @include grid(4);
+            }
+            .col-5 {
+                @include grid(5);
+            }
+            .col-6 {
+                @include grid(6);
+            }
+            .col-7 {
+                @include grid(7);
+            }
+            .col-8 {
+                @include grid(8);
+            }
+            .col-9 {
+                @include grid(9);
+            }
+            .col-10 {
+                @include grid(10);
+            }
+            .col-11 {
+                @include grid(11);
+            }
+            .col-12 {
+                @include grid(12);
+            }
+        }
+    }
+
+    .montserrat-sample {
+        font-family: 'Montserrat';
+        max-width: 60%;
+        font-size: 1.5em;
+        color: $grey-color-dark;
+        background-color: $background-color;
+        padding: 1em;
+    }
+
+    .source-sans-sample {
+        font-family: 'Source Sans Pro';
+        max-width: 60%;
+        font-size: 1.5em;
+        color: $grey-color-dark;
+        background-color: $background-color;
+        padding: 1em;
+    }
+
+    //styles for color section
+    @mixin centerer($position: relative) {
+        position: $position;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @mixin position($position, $top, $right, $bottom, $left) {
+        position: $position;
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        left: $left;
+    }
+
+    @mixin size($dimension) {
+        width: $dimension;
+        height: $dimension;
+    }
+
+    .break {
+        width: 100%;
+        height: 3em;
+    }
+
+    #color-section {
+        width: 100%;
+        height: auto;
+        position: relative;
+        .background-color {
+            position: relative;
+            width: 20%;
+            height: 10em;
+            background-color: $background-color;
+            display: inline-block;
+            float: left;
+            z-index: 998;
+            //        overflow: hidden;
+            //        text-overflow: ellipsis;
+            //        white-space: nowrap;
+            span {
+                text-transform: uppercase;
+                text-align: center;
+                @include centerer(absolute);
+            }
+            &:hover {
+                box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, .25);
+            }
+        }
+        .primary {
+            @extend .background-color;
+            background-color: $brand-color;
+        }
+        .secondary {
+            @extend .background-color;
+            background-color: $apricot;
+        }
+        .accent1 {
+            @extend .background-color;
+            background-color: $secondary-red;
+        }
+        .accent2 {
+            @extend .background-color;
+            background-color: $secondary-blue;
+        }
+        .white-text {
+            color: white;
+        }
+    }

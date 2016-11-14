@@ -1,0 +1,194 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+		"variables",
+        "base",
+        "grid",
+        "syntax-highlighting",
+        "colortype"
+;
+
+
+/**
+ * Site header
+ */
+.site-header {
+    border-bottom: solid 5px $brand-color;
+    z-index: 999;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    background: #ffffff;
+}
+
+.site-title {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+
+.site-nav {
+    float: right;
+    line-height: 40px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+/*** Hero ***/
+
+.hero-top {
+    padding: 1.5em;
+	background-color: $brand-color;
+    margin-top: 2em;
+    margin-bottom: 0;
+    .herotext {
+    margin-bottom: 0;
+    }
+}
+
+.herobottom {
+    margin-top: 0;
+    background-color: $brand-color;
+    .tabwrap {
+        margin: 0 1.5em;
+    }
+    .herocontent {
+         background: 
+        /* top, transparent beige, faked with gradient */ 
+        linear-gradient(
+          rgba(49, 40, 44, 0.5), 
+          rgba(49, 40, 44, 0.5)
+        ),
+        /* bottom, image */
+        url(../images/hero.png);
+        background-size: cover;
+        h2 {
+            padding: 0em 32px;
+            margin-top: 3em;
+          }
+        p {
+            padding: 0em 32px;
+            margin-top: 1em;
+            margin-bottom: 6em;
+        }
+    }
+}
+
+.oursolutions {
+    .solutions {
+        padding: 0em 32px;
+        h3 {
+            height: 18em;
+            border: solid 4px $grey-color;
+            padding: 10px;
+
+        }
+    }
+}
+
+.notsure {
+    padding: 0em 32px;
+    margin: 32px;
+    background-color: $secondary-blue;
+    .letushelp {
+    padding: 1.5em;
+        h3 {
+            color: #ffffff;
+        }
+    }
+     .bucket {
+        background:   
+        linear-gradient(
+          rgba(49, 40, 44, 0.5), 
+          rgba(49, 40, 44, 0.5)
+        ),
+        /* bottom, image */
+        url(../images/help.png);
+        background-size: cover;
+    }
+    .picture, .emailus, .callus {
+        padding: 1.5em;
+        h4 {
+            color: #ffffff;
+        }
+    }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+   height:20px;
+   width:100%;
+   background:#fff;
+    border-top: 3px solid $brand-color;
+    padding: $spacing-unit 0;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 3;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+    width:         calc(40% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+    width: -webkit-calc(15% - (#{$spacing-unit} / 2));
+    width:         calc(15% - (#{$spacing-unit} / 2));
+}
+

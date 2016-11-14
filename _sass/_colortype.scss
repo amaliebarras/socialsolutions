@@ -1,0 +1,49 @@
+* {
+	font-family: $base-font-family;
+}
+
+h1 {
+	font-size: $header-font-size;
+	line-height: $header-line-height;
+	font-weight: $header-font-weight;
+	color: #ffffff;
+}
+
+h2 {
+	font-size: $header-font-size / 1.5;
+	line-height: $header-line-height;
+	font-weight: $header-font-weight;
+	color: #ffffff;
+}
+
+p {
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	font-weight: $base-font-weight;
+	color: #ffffff;
+}
+
+.buttn {
+	h4 {
+		padding: 10px 16px;
+		text-align: center;
+	}
+	.learnmore h4 {
+		color: $apricot;
+		background-color: none;
+		border: solid 4px $apricot;
+	}
+	.getdemo h4 {
+		color: #ffffff;
+		background-color: $secondary-red;
+		border: solid 4px $secondary-red;
+	}
+
+	.goback {
+		display: none;
+		color: #ffffff;
+		background-color: $secondary-blue;
+		border: solid 4px $secondary-blue;
+	}
+
+}
