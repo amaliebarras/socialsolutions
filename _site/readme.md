@@ -106,7 +106,6 @@ Here is a link to a new brand guide that we will be moving toward in the coming 
 ## Sketches
 
 
-
 ## Wireframes
 
 
@@ -114,4 +113,12 @@ Here is a link to a new brand guide that we will be moving toward in the coming 
 ## Style Tile
 
 
+
 ## Final Mockup
+
+## Code
+
+### [Live static site]()
+### [Codepen with Tabs](http://codepen.io/amaliebarras/pen/gLMrem)
+
+

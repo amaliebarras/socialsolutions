@@ -19,3 +19,5 @@ markdown: kramdown
 sass:
     sass_dir: _sass
     css_dir: css
+
+gems: [bourbon]
